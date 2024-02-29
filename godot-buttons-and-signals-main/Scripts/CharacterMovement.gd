@@ -45,3 +45,23 @@ func _physics_process(delta):
 
 		
 
+
+
+func _on_background_tilemap_child_entered_tree(node):
+
+	pass # Replace with function body.
+
+
+func _on_foreground_tilemap_child_entered_tree(node):
+	show()
+	pass # Replace with function body.
+
+
+func _on_static_body_2d_child_exiting_tree(node):
+	hide()
+	pass # Replace with function body.
+
+
+func _on_area_2d_body_entered(body):
+	show()
+	pass # Replace with function body.

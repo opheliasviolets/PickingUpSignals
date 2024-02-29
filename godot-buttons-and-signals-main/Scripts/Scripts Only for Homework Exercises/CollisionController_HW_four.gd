@@ -13,3 +13,7 @@ func _enable_collision():
 
 
 
+
+
+func _on_open_door_button_pressed():
+	pass # Replace with function body.
