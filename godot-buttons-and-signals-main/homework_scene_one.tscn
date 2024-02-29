@@ -10,14 +10,14 @@ offset_left = 173.0
 offset_top = 367.0
 offset_right = 354.0
 offset_bottom = 464.0
-text = "I should rotate Sonic"
+text = "I DO rotate Sonic!"
 
 [node name="Sonic-transparent" type="Sprite2D" parent="."]
 position = Vector2(230, 153)
 scale = Vector2(0.452381, 0.452381)
 texture = ExtResource("7_c7e4m")
 script = ExtResource("2_e6ps1")
-rotation_speed = -100
+rotation_speed = 100
 
 [node name="Instructions" type="RichTextLabel" parent="."]
 offset_left = 488.0
@@ -42,3 +42,5 @@ text = "HINT:
 You'll need to copy and paste a function in the rotate_for_HW_scene_one.gd file, but first you'll need to do something else (NOT in the code)
 
 "
+
+[connection signal="pressed" from="Button" to="Sonic-transparent" method="_on_button_pressed"]
